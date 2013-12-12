@@ -35,17 +35,17 @@ namespace TemplateApp.Core.DI
             return DiContainer.Resolve<T>(new ParameterOverride(paramName, paramValue));
         }
 
-        public T Resolve<T>(params ResolverOverride[] overrides)
+        public virtual T Resolve<T>(params ResolverOverride[] overrides)
         {
             return DiContainer.Resolve<T>(overrides);
         }
 
-        public object Resolve(Type t, params ResolverOverride[] overrides)
+        public virtual object Resolve(Type t, params ResolverOverride[] overrides)
         {
             return DiContainer.Resolve(t, overrides);
         }
 
-        public T Resolve<T>(String name, params ResolverOverride[] overrides)
+        public virtual T Resolve<T>(String name, params ResolverOverride[] overrides)
         {
             return DiContainer.Resolve<T>(name, overrides);
         }
