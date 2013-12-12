@@ -12,11 +12,14 @@ namespace TemplateApp.Data
         public UnitOfWork()
         {
             Context = new TDbContext();
+            DbContext = Context;
         }
 
         #endregion public constructors
 
         #region public properties
+
+        public DbContext DbContext { get; private set; }
 
         internal TDbContext Context { get; private set; }
 
