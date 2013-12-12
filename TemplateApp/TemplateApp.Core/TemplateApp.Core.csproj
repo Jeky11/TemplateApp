@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DI\DiManagerBase.cs" />
+    <Compile Include="DI\IDiManager.cs" />
+    <Compile Include="DI\IUnitySetup.cs" />
+    <Compile Include="DI\UnityManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
