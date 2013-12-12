@@ -18,6 +18,8 @@ namespace TemplateApp.Data.Entities
 
         public String FullName { get; set; }
 
+        public Int32 HourlyRate { get; set; }
+
         public DateTimeOffset CreatedDate { get; set; }
 
         public DateTimeOffset UpdatedDate { get; set; }

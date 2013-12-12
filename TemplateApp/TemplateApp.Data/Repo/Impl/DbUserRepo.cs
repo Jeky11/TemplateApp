@@ -40,8 +40,9 @@ namespace TemplateApp.Data.Repo.Impl
                 Password = password,
                 FirstName = firstName,
                 LastName = lastName,
-                FullName = firstName + " " + lastName,
+                FullName = firstName + (String.IsNullOrEmpty(lastName) ? String.Empty : " " + lastName),
                 Email = email,
+                HourlyRate = hourlyRate,
                 CreatedDate = DateTimeOffset.Now,
                 UpdatedDate = DateTimeOffset.Now,
             });

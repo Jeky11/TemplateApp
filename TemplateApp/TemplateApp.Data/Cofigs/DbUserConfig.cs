@@ -16,6 +16,7 @@ namespace TemplateApp.Data.Cofigs
             Property(x => x.FirstName).IsRequired().HasMaxLength(100);
             Property(x => x.LastName).HasMaxLength(100);
             Property(x => x.FullName).HasMaxLength(200);
+            Property(x => x.HourlyRate).IsRequired();
             Property(x => x.CreatedDate).IsRequired();
             Property(x => x.UpdatedDate).IsRequired();
         }

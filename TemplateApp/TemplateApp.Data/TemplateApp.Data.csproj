@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201312120850031_InitialCreate.Designer.cs">
       <DependentUpon>201312120850031_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201312121150297_AddHourlyRate.cs" />
+    <Compile Include="Migrations\201312121150297_AddHourlyRate.Designer.cs">
+      <DependentUpon>201312121150297_AddHourlyRate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\IDbUserRepo.cs" />
@@ -87,6 +91,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201312120850031_InitialCreate.resx">
       <DependentUpon>201312120850031_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201312121150297_AddHourlyRate.resx">
+      <DependentUpon>201312121150297_AddHourlyRate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
