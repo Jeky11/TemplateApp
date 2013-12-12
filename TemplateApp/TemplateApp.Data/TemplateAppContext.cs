@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using TemplateApp.Data.Cofigs;
 
 namespace TemplateApp.Data
 {
@@ -11,7 +12,7 @@ namespace TemplateApp.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Configurations.Add(new DbUserConfig());
+            modelBuilder.Configurations.Add(new DbUserConfig());
         }
     }
 }
